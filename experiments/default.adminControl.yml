@@ -1,0 +1,13 @@
+# This file was edited by Cloudbees Feature Management
+type: experiment
+name: admin control
+description: 'Experiment: admin control'
+flag: default.adminControl
+conditions:
+  - property:
+      name: email
+      operator: in-array
+      operand:
+        - greg@cloudbees.com
+    value: true
+value: false
